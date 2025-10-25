@@ -3,7 +3,8 @@ const minute = document.querySelector('#minute')
 const second = document.querySelector('#second')
 
 
-    setInterval( () => {
+function atualizarRelogio() {
+
         const date = new Date()
 
         const dateHour = date.getHours().toString().padStart(2, "0")
@@ -14,7 +15,12 @@ const second = document.querySelector('#second')
         hour.textContent = dateHour
         minute.textContent = dateMinute
         second.textContent = dateSecond
-    },1000)
+
+}
+
+setInterval(atualizarRelogio(),1000)
+
+atualizarRelogio()
 
 
 
