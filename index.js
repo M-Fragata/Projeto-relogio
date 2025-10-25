@@ -1,6 +1,6 @@
-const hour = document.querySelector('p#hour')
-const minute = document.querySelector('p#minute')
-const second = document.querySelector('p#second')
+const hour = document.querySelector('#hour')
+const minute = document.querySelector('#minute')
+const second = document.querySelector('#second')
 
 
     setInterval( () => {
